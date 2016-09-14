@@ -1,0 +1,26 @@
+<script>
+// return value between 1 - 6
+var die1 = Math.floor((Math.random() * 6) + 1);
+var die2 = Math.floor((Math.random() * 6) + 1);
+
+// calculate sum of dice
+var sum = die1 + die2;
+
+// display results
+document.write("Die 1: " + die1 + "<br><br>");
+document.write("Die 2: " + die2);
+
+// display message when applicable
+if (sum == 2) 
+{
+	document.write("<br><br>Snake Eyes!");
+}
+else if (sum == 7) 
+{
+	document.write("<br><br>Craps!");
+}
+else if (sum == 12) 
+{
+	document.write("<br><br>Box Cars!");
+}
+</script>
